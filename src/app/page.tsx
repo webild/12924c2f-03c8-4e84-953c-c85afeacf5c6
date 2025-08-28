@@ -4,7 +4,6 @@ import SimpleHero from '@/components/sections/layouts/hero/SimpleHero';
 import SimpleKPIBento from '@/components/bento/SimpleKPIBento';
 import MinimalAbout from '@/components/sections/layouts/about/MinimalAbout';
 import RegularFAQ from '@/components/sections/layouts/faq/RegularFAQ';
-import ContactForm from '@/components/sections/layouts/contact/ContactForm';
 import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
@@ -18,7 +17,7 @@ export default function Home() {
           <SimpleKPIBento items={[{ value: 'Fast', description: 'Experience rapid launches.' }, { value: 'Secure', description: 'Your data is safe with us.' }, { value: 'Reliable', description: 'Depend on us for uptime.' }]} className="grid" />
         </section>
         <section id="about" className="bg-[#F7F8FC] py-18">
-          <MinimalAbout description="NovaLaunch is dedicated to providing an efficient experience for everyone diving into new technologies." />
+          <MinimalAbout description="NovaLaunch is dedicated toproviding an efficient experience for everyone diving into new technologies." />
         </section>
         <section id="testimonials" className="bg-gradient-to-b from-[#F4F6FF] to-white py-18">
           <RegularFAQ items={[{ title: 'Client Success', content: '"NovaLaunch helped us grow exponentially!" – Client A' }, { title: 'Outstanding Service', content: '"Easy to work with, great results!" – Client B' }]} />
@@ -29,7 +28,8 @@ export default function Home() {
           <button className="bg-primary text-white p-3 rounded">Get In Touch <ArrowRight /></button>
         </section>
         <section id="contact" className="bg-white py-18">
-          <ContactForm />
+          <h2>Contact</h2>
+          <p>We would love to hear from you!</p>
         </section>
       </div>
     </SiteThemeProvider>
